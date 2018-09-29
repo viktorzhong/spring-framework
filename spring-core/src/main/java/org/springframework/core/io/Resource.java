@@ -30,6 +30,9 @@ import org.springframework.lang.Nullable;
  * Interface for a resource descriptor that abstracts from the actual
  * type of underlying resource, such as a file or class path resource.
  *
+ * 它的每一个实现类都代表了一种资源的访问策略
+ * 如 ClassPathResource、RLResource、FileSystemResource 等
+ *
  * <p>An InputStream can be opened for every resource if it exists in
  * physical form, but a URL or File handle can just be returned for
  * certain resources. The actual behavior is implementation-specific.
