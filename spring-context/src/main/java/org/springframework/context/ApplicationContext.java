@@ -34,7 +34,6 @@ import org.springframework.lang.Nullable;
  * 3. 扩展ResourceLoader ，可以用来加载多种 Resource ，可以灵活访问不同的资源。
  * 4. 对Web应用的支持。
  *
- *
  * <p>An ApplicationContext provides:
  * <ul>
  * <li>Bean factory methods for accessing application components.
