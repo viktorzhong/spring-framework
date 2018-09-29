@@ -26,6 +26,8 @@ import org.springframework.lang.Nullable;
  * constructor argument values, and further information supplied by
  * concrete implementations.
  *
+ * 用来描述Spring中的Bean对象
+ *
  * <p>This is just a minimal interface: The main intention is to allow a
  * {@link BeanFactoryPostProcessor} such as {@link PropertyPlaceholderConfigurer}
  * to introspect and modify property values and other bean metadata.

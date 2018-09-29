@@ -28,6 +28,12 @@ import org.springframework.lang.Nullable;
  * This is read-only while the application is running, but may be
  * reloaded if the implementation supports this.
  *
+ * 对BeanFactory的扩展
+ * 1. 继承org.springframework.context.MessageSource 接口，提供国际化的标准访问策略。
+ * 2. 继承org.springframework.context.ApplicationEventPublisher 接口，提供强大的事件机制。
+ * 3. 扩展ResourceLoader ，可以用来加载多种 Resource ，可以灵活访问不同的资源。
+ * 4. 对Web应用的支持。
+ *
  * <p>An ApplicationContext provides:
  * <ul>
  * <li>Bean factory methods for accessing application components.

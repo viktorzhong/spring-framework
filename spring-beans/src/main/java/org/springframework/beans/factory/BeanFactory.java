@@ -27,6 +27,10 @@ import org.springframework.lang.Nullable;
  * {@link org.springframework.beans.factory.config.ConfigurableBeanFactory}
  * are available for specific purposes.
  *
+ * BeanFactory 内部维护着一个BeanDefinition map ，并可根据 BeanDefinition 的描述进行 bean 的创建和管理
+ * BeanFactory 有三个直接子类 ListableBeanFactory、HierarchicalBeanFactory 和 AutowireCapableBeanFactory
+ * DefaultListableBeanFactory 为最终默认实现，它实现了所有接口
+ *
  * <p>This interface is implemented by objects that hold a number of bean definitions,
  * each uniquely identified by a String name. Depending on the bean definition,
  * the factory will return either an independent instance of a contained object
