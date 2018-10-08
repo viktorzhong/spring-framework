@@ -25,6 +25,11 @@ import org.springframework.core.io.ResourceLoader;
  * Strategy interface for resolving a location pattern (for example,
  * an Ant-style path pattern) into Resource objects.
  *
+ * ResourceLoader 的扩展，它支持根据指定的资源路径匹配模式每次返回多个 Resource 实例
+ * ResourcePatternResolver 在 ResourceLoader 的基础上增加了 #getResources(String locationPattern) 方法，
+ * 以支持根据路径匹配模式返回多个 Resource 实例
+ * 同时，也新增了一种新的协议前缀 "classpath*:"，该协议前缀由其子类负责实现
+ *
  * <p>This is an extension to the {@link org.springframework.core.io.ResourceLoader}
  * interface. A passed-in ResourceLoader (for example, an
  * {@link org.springframework.context.ApplicationContext} passed in via

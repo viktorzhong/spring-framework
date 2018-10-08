@@ -51,8 +51,11 @@ public interface ResourceLoader {
 	 * allowing for multiple {@link Resource#getInputStream()} calls.
 	 * <p><ul>
 	 * <li>Must support fully qualified URLs, e.g. "file:C:/test.dat".
+	 * 1. 支持URL位置资源，如 "file:C:/test.dat"
 	 * <li>Must support classpath pseudo-URLs, e.g. "classpath:test.dat".
+	 * 2. 支持ClassPath位置资源，如 "classpath:test.dat"
 	 * <li>Should support relative file paths, e.g. "WEB-INF/test.dat".
+	 * 3. 支持相对路径资源，如 "WEB-INF/test.dat"
 	 * (This will be implementation-specific, typically provided by an
 	 * ApplicationContext implementation.)
 	 * </ul>

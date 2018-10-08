@@ -33,7 +33,7 @@ import org.springframework.lang.Nullable;
  * 2. 继承org.springframework.context.ApplicationEventPublisher 接口，提供强大的事件机制。
  * 3. 扩展ResourceLoader ，可以用来加载多种 Resource ，可以灵活访问不同的资源。
  * 4. 对Web应用的支持。
- * 
+ *
  *
  * <p>An ApplicationContext provides:
  * <ul>
